@@ -16,7 +16,7 @@ I then followed up with running a single instance of Claude for each task:
 
 Claude was able to build everything in 21 minutes, including the time it took me to manually trigger each step.
 
-See the result [here]([https://github.com/george-cz/vibe-website](https://george-cz.github.io/vibe-website/)). The CI/CD pipeline was also built by Claude, took overall 2 minutes including me prompting and updating the config and changing configuration on Github.
+See the result [here](https://george-cz.github.io/vibe-website/). The CI/CD pipeline was also built by Claude, took overall 2 minutes including me prompting and updating the config and changing configuration on Github.
 
 # React + Vite
 
