@@ -33,28 +33,28 @@ export default function Footer() {
   ];
 
   return (
-    <footer id="contact" className="bg-gray-900 text-white">
+    <footer id="contact" className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white">
       {/* Main Footer Content */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 text-indigo-400">ModernSite</h3>
-            <p className="text-gray-400 mb-6 leading-relaxed">
+            <h3 className="text-2xl font-bold mb-4 text-indigo-600 dark:text-indigo-400">ModernSite</h3>
+            <p className="text-gray-600 dark:text-gray-400 mb-6 leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
 
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center gap-3 text-gray-400">
+              <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                 <Mail size={18} />
                 <span>contact@modernsite.com</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-400">
+              <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                 <Phone size={18} />
                 <span>+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center gap-3 text-gray-400">
+              <div className="flex items-center gap-3 text-gray-600 dark:text-gray-400">
                 <MapPin size={18} />
                 <span>123 Main St, City, State 12345</span>
               </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -103,7 +103,7 @@ export default function Footer() {
                 <li key={index}>
                   <a
                     href={link.href}
-                    className="text-gray-400 hover:text-indigo-400 transition-colors duration-200"
+                    className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200"
                   >
                     {link.name}
                   </a>
@@ -115,11 +115,11 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-800">
+      <div className="border-t border-gray-200 dark:border-gray-800">
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             {/* Copyright */}
-            <p className="text-gray-400 text-sm">
+            <p className="text-gray-600 dark:text-gray-400 text-sm">
               © {currentYear} ModernSite. All rights reserved.
             </p>
 
@@ -130,7 +130,7 @@ export default function Footer() {
                   key={index}
                   href={social.href}
                   aria-label={social.label}
-                  className="w-10 h-10 bg-gray-800 hover:bg-indigo-600 rounded-full flex items-center justify-center transition-colors duration-200"
+                  className="w-10 h-10 bg-gray-200 dark:bg-gray-800 hover:bg-indigo-600 dark:hover:bg-indigo-600 text-gray-700 dark:text-gray-300 rounded-full flex items-center justify-center transition-colors duration-200"
                 >
                   {social.icon}
                 </a>
@@ -139,10 +139,10 @@ export default function Footer() {
 
             {/* Legal Links */}
             <div className="flex gap-6 text-sm">
-              <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors duration-200">
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
                 Privacy Policy
               </a>
-              <a href="#" className="text-gray-400 hover:text-indigo-400 transition-colors duration-200">
+              <a href="#" className="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200">
                 Terms of Service
               </a>
             </div>
