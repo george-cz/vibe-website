@@ -1,6 +1,6 @@
 # Task 06: Footer & Contact Section
 
-**Status**: [ ] NOT STARTED
+**Status**: [✓ COMPLETED]
 
 **Dependencies**: Task 02
 
