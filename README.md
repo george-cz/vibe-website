@@ -1,3 +1,23 @@
+# Testing the limits
+
+This entire website was coded solely by Claude Sonnet 4.5 after following my prompt, which I just dictated to microphone (hence the typos):
+```
+" Hey I need to build a really simple website. It's gonna be a one page. It has to be responsive and it should
+  have a very nice modern design for the contents. Just put like random lorem ipsum. You should pick whatever
+  front and framework you wanna use, but youse probably react. Your task is not to implement everything right
+  now, but you should come up with a plan that we will divide in multiple markdown files and then Claude
+  instances will autonomously pick the tasks in order and finish them."
+```
+
+Claude was able to generate `TASK-WORKFLOW-README.md` file and bunch of task files.
+
+I then followed up with running a single instance of Claude for each task:
+`cat TASK-WORKFLOW-README.md task-03.md | claude "Implement this task"`.
+
+Claude was able to build everything in 21 minutes, including the time it took me to manually trigger each step.
+
+See the result [here]([https://github.com/george-cz/vibe-website](https://george-cz.github.io/vibe-website/)). The CI/CD pipeline was also built by Claude, took overall 2 minutes including me prompting and updating the config and changing configuration on Github.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
