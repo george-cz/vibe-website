@@ -1,6 +1,6 @@
 # Task 04: Hero Section
 
-**Status**: [ ] NOT STARTED
+**Status**: [✓ COMPLETED]
 
 **Dependencies**: Task 02
 
